@@ -3,6 +3,7 @@
 #include "Models.h"
 #include "Camera.h"
 #include "Texture.h"
+#include <memory>
 
 extern GLint screenWidth;
 extern GLint screenHeight;
@@ -17,7 +18,7 @@ void Sprite2D::CaculateWorldMatrix()
 	m_WorldMat = m_Sc*m_T;
 }
 
-Sprite2D::Sprite2D(Models * model, Shaders * shader, Texture * texture)
+Sprite2D::Sprite2D(std::shared_ptr<Models> model, std::shared_ptr<Shaders> shader, std::shared_ptr<Texture> texture)
 	: BaseObject()
 {
 	m_pModel = model;
@@ -31,7 +32,7 @@ Sprite2D::Sprite2D(Models * model, Shaders * shader, Texture * texture)
 	m_Vec3Scale = Vector3((float)m_iWidth/screenWidth, (float)m_iHeight/screenHeight, 1);
 }
 
-Sprite2D::Sprite2D(Models * model, Shaders * shader, Vector4 color)
+Sprite2D::Sprite2D(std::shared_ptr<Models> model, std::shared_ptr<Shaders> shader, Vector4 color)
 	: BaseObject()
 {
 	m_pModel = model;

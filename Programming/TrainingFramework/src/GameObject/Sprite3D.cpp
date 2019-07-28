@@ -3,7 +3,7 @@
 #include "Shaders.h"
 #include "Models.h"
 #include "Texture.h"
-
+#include <memory>
 
 void Sprite3D::CaculateWorldMatrix()
 {
@@ -20,7 +20,7 @@ void Sprite3D::CaculateWorldMatrix()
 	m_WorldMat = m_Sc*m_Rz*m_Rx*m_Ry*m_T;
 }
 
-Sprite3D::Sprite3D(Models * model, Shaders * shader, Camera* camera, Texture * texture)
+Sprite3D::Sprite3D(std::shared_ptr<Models> model, std::shared_ptr<Shaders> shader, std::shared_ptr<Camera> camera, std::shared_ptr<Texture> texture)
 	: BaseObject()
 {
 	m_pModel = model;
@@ -29,7 +29,7 @@ Sprite3D::Sprite3D(Models * model, Shaders * shader, Camera* camera, Texture * t
 	m_pTexture = texture;
 }
 
-Sprite3D::Sprite3D(Models * model, Shaders * shader, Camera* camera, Vector4 color)
+Sprite3D::Sprite3D(std::shared_ptr<Models> model, std::shared_ptr<Shaders> shader, std::shared_ptr<Camera> camera, Vector4 color)
 	: BaseObject()
 {
 	m_pModel = model;

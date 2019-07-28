@@ -1,0 +1,15 @@
+﻿  cl : Command line warning D9035 : option 'Gm' has been deprecated and will be removed in a future release
+  Sprite3D.cpp
+  Sprite2D.cpp
+C:\Users\Hieu\Desktop\work\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(144,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Hieu\Desktop\work\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(145,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Hieu\Desktop\work\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(155,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+  Application.cpp
+C:\Users\Hieu\Desktop\work\Programming\TrainingFramework\src\GameObject\Sprite2D.cpp(156,11): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  TrainingFramework.cpp
+  Generating Code...
+C:\Users\Hieu\Desktop\work\Programming\TrainingFramework\src\Application.cpp(95,50): warning C4305:  'argument': truncation from 'double' to 'GLfloat'
+Application.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  TrainingFramework.vcxproj -> C:\Users\Hieu\Desktop\work\Programming\\BIN-Nvidia\TrainingFramework.exe
