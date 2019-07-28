@@ -101,6 +101,11 @@ void Application::Init()
 	m_Sprite3D1->SetCamera(m_Camera);
 }
 
+
+
+
+
+
 void Application::Update(GLfloat deltaTime)
 {
 	//update
